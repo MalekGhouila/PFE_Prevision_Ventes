@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a766c32c-6e9b-484a-93c8-cda5ad0016df" name="Changes" comment="analyse et exploitation">
-      <change afterPath="$PROJECT_DIR$/src/comparaison_date_reception.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data_cleaning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/feature_engineering.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/france_weekly_feature_engineering_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/france_feature_engineering.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/france_weekly_feature_engineering.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/model_comparison_v1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/save_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/train_per_family_ridge_v1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/train_xgboost_v8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test_csv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/train_xgboost.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/train_xgboostV2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/train_xgboostV3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/train_xgboostV4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/train_xgboost_v5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/train_xgboost_v6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/train_xgboost_v7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,9 +65,26 @@
     "Python.analyze_referential_tables.executor": "Run",
     "Python.check_sample.executor": "Run",
     "Python.comparaison_date_reception.executor": "Run",
+    "Python.data_cleaning.executor": "Run",
     "Python.detect_outliers.executor": "Run",
+    "Python.feature_engineering.executor": "Run",
+    "Python.france_feature_engineering.executor": "Run",
+    "Python.france_weekly_feature_engineering.executor": "Run",
+    "Python.france_weekly_feature_engineering_v2.executor": "Run",
+    "Python.model_comparison_v1.executor": "Run",
     "Python.prepare_time_series.executor": "Run",
+    "Python.save_model.executor": "Run",
     "Python.test_connection.executor": "Run",
+    "Python.test_csv.executor": "Run",
+    "Python.train_per_family_ridge_v1.executor": "Run",
+    "Python.train_xgboost.executor": "Run",
+    "Python.train_xgboostV2.executor": "Run",
+    "Python.train_xgboostV3.executor": "Run",
+    "Python.train_xgboostV4.executor": "Run",
+    "Python.train_xgboost_v5.executor": "Run",
+    "Python.train_xgboost_v6.executor": "Run",
+    "Python.train_xgboost_v7.executor": "Run",
+    "Python.train_xgboost_v8.executor": "Run",
     "Python.week1_eda.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -59,6 +94,7 @@
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/malek/PycharmProjects/PFE_Prevision_Ventes/src",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "SQL Dialects",
     "vue.rearranger.settings.migration": "true"
@@ -70,6 +106,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\malek\PycharmProjects\PFE_Prevision_Ventes\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\malek\PycharmProjects\PFE_Prevision_Ventes\reports\figures\V1" />
       <recent name="C:\Users\malek\PycharmProjects\PFE_Prevision_Ventes\data\processed\V1" />
@@ -99,6 +138,12 @@
       <workItem from="1771328364677" duration="6091000" />
       <workItem from="1772455401422" duration="1626000" />
       <workItem from="1772460621494" duration="2931000" />
+      <workItem from="1772574469172" duration="1009000" />
+      <workItem from="1773238726585" duration="7967000" />
+      <workItem from="1774435575342" duration="133000" />
+      <workItem from="1775228480653" duration="7329000" />
+      <workItem from="1775493919067" duration="7256000" />
+      <workItem from="1775582095082" duration="6541000" />
     </task>
     <task id="LOCAL-00001" summary="project creation">
       <option name="closed" value="true" />
@@ -116,7 +161,23 @@
       <option name="project" value="LOCAL" />
       <updated>1771067234023</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="analyse et exploitation">
+      <option name="closed" value="true" />
+      <created>1772574601111</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1772574601111</updated>
+    </task>
+    <task id="LOCAL-00004" summary="analyse et exploitation">
+      <option name="closed" value="true" />
+      <created>1772574815586</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1772574815586</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,13 +189,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="analyse et exploitation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$train_xgboost_v7.coverage" NAME="train_xgboost_v7 Coverage Results" MODIFIED="1775497571181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$prepare_time_series.coverage" NAME="prepare_time_series Coverage Results" MODIFIED="1770849627349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$train_xgboost.coverage" NAME="train_xgboost Coverage Results" MODIFIED="1775229999749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$france_weekly_feature_engineering.coverage" NAME="france_weekly_feature_engineering Coverage Results" MODIFIED="1775496859447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$save_model.coverage" NAME="save_model Coverage Results" MODIFIED="1775665165987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/models" />
     <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$analyze_histovente_columns.coverage" NAME="analyze_histovente_columns Coverage Results" MODIFIED="1771036087018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$data_cleaning.coverage" NAME="data_cleaning Coverage Results" MODIFIED="1773311831863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$france_feature_engineering.coverage" NAME="france_feature_engineering Coverage Results" MODIFIED="1775496056040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$week1_eda.coverage" NAME="week1_eda Coverage Results" MODIFIED="1770848588522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$test_csv.coverage" NAME="test_csv Coverage Results" MODIFIED="1775231655925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$detect_outliers.coverage" NAME="detect_outliers Coverage Results" MODIFIED="1770849428144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$comparaison_date_reception.coverage" NAME="comparaison_date_reception Coverage Results" MODIFIED="1772497175448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$check_sample.coverage" NAME="check_sample Coverage Results" MODIFIED="1770849415014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$train_xgboostV2.coverage" NAME="train_xgboostV2 Coverage Results" MODIFIED="1775230325815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$analyze_referential_tables.coverage" NAME="analyze_referential_tables Coverage Results" MODIFIED="1771041560063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$train_xgboost_v6.coverage" NAME="train_xgboost_v6 Coverage Results" MODIFIED="1775496914913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$train_per_family_ridge_v1.coverage" NAME="train_per_family_ridge_v1 Coverage Results" MODIFIED="1775583040317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/models" />
     <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$test_connection.coverage" NAME="test_connection Coverage Results" MODIFIED="1770692645201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$feature_engineering.coverage" NAME="feature_engineering Coverage Results" MODIFIED="1775495824446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$france_weekly_feature_engineering_v2.coverage" NAME="france_weekly_feature_engineering_v2 Coverage Results" MODIFIED="1775582310074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/features" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$train_xgboostV4.coverage" NAME="train_xgboostV4 Coverage Results" MODIFIED="1775232275955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$train_xgboost_v8.coverage" NAME="train_xgboost_v8 Coverage Results" MODIFIED="1775500337105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/models" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$train_xgboost_v5.coverage" NAME="train_xgboost_v5 Coverage Results" MODIFIED="1775496204614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$train_xgboostV3.coverage" NAME="train_xgboostV3 Coverage Results" MODIFIED="1775230539301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PFE_Prevision_Ventes$model_comparison_v1.coverage" NAME="model_comparison_v1 Coverage Results" MODIFIED="1775582395278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/models" />
   </component>
 </project>
